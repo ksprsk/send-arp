@@ -30,4 +30,4 @@ $(BIN_DIR):
 
 # Clean rule to remove binaries and object files
 clean:
-	rm -f $(BIN_DIR)/send-arp $(OBJS)
+	rm -rf $(BIN_DIR)
