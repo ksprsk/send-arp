@@ -120,6 +120,7 @@ int main(int argc, char *argv[])
 	Ip dev_IP = Ip(ntohl(*(uint32_t *)&((sockaddr_in *)(dev_addr->addr))->sin_addr)); // casting and ntohl
 	pcap_pkthdr *header;
 	const EthArpPacket *ppacket;
+	printf("done here\n");
 	for (int i = 2; i < argc; i += 2)
 	{
 		Ip senderIp = Ip(argv[i]);
