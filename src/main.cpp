@@ -90,7 +90,7 @@ int main(int argc, char *argv[])
 	}
 	while (devp)
 	{
-		if (dev == std::string(dev, devp->name))
+		if (std::string(dev) == std::string(devp->name))
 			break;
 		devp = devp->next;
 	}
